@@ -1,4 +1,4 @@
-# Paradigmas-Logico
+# Paradigma Logico
 Aca se encuentra todo lo practicado con respecto al paradigma logico.
 
 Enlaces Importantes
