@@ -57,12 +57,8 @@ cantidadPasajeros(M, P):-
 % EJERCICIO 4 - lugarVehiculizado/1 todos los que viven ahi tienen un
 % vehiculo para mas de 10 personas %
 
-vehiculoGrande(M):-
-	cantidadPasajeros(M,P),
-	P > 10.
-
 lugarVehiculizado(L):-
 	viveEn(M,L),
 	forall(viveEn(M,L),maneja(M,_)),
-	forall(viveEn(M,L),vehiculoGrande(M)).
+	forall(cantidadPasajeros(M,P),P > 10).
 
